@@ -9,11 +9,11 @@ app=Flask(__name__)
 
 
 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/vitproject"
+app.config["MONGO_URI"] = "uri"
 mongo = PyMongo(app)
 
 
-cluster = MongoClient("mongodb+srv://bondjames181920:Shreyash18@cluster0.d3op3bw.mongodb.net/?retryWrites=true&w=majority")
+cluster = MongoClient("your_account_connection_link")
 db = cluster["db"]
 collection = db["userdata"]
 collection2=db["projectdetail"]
